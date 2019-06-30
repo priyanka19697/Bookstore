@@ -3,21 +3,28 @@ import { Link, withRouter } from 'react-router-dom';
 import '../index.css';
 
 const Navbar = props => {
-	// setTimeout(() => {
-	// 	props.history.push('/about');
-	// }, 2000);
 	return (
-		<nav className="nav red">
+		<nav className="navbar navbar-light bg-light">
 			<div className="container">
-				<a href="/">
-					<h3>Bookstore</h3>
+				<a className="navbar-brand" href="/">
+					<h2>
+						<b>Bookstore</b>
+					</h2>
 				</a>
-				<ul className="right">
-					<li>
-						<Link to="/">Home</Link>
+
+				<ul className="nav nav-bar right px-2">
+					<li className="nav-item active m-2">
+						<h3>
+							<Link to="/"> Home </Link>
+						</h3>
 					</li>
-					<li>
-						<Link to="/addBook">AddBook</Link>
+					<li className="m-2">
+						<h3>|</h3>
+					</li>
+					<li className="nav-item active m-2">
+						<h3>
+							<Link to="/addBook"> AddBook </Link>
+						</h3>
 					</li>
 				</ul>
 			</div>

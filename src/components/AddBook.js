@@ -16,8 +16,8 @@ class AddBook extends Component {
 	checkExistence = () => {
 		if (this.props.match.params.bookId) {
 			console.log('FOUND BOOKID');
-			// now get the book from server
-			// bad way to make network call for 1 book but works
+			//get the book from server
+			//fill it with current details for user to update
 			getBook(this.props.match.params.bookId).then(book => {
 				this.setState({
 					title: book.title,
@@ -28,7 +28,7 @@ class AddBook extends Component {
 					price: book.price,
 					genre: book.genre,
 					format: book.format,
-					id: book.id, // setting id is important
+					id: book.id,
 				});
 			});
 		} else {
@@ -54,8 +54,6 @@ class AddBook extends Component {
 	};
 
 	render() {
-		console.log(this.props);
-		console.log('STATE', this.state);
 		return (
 			<div className="container">
 				<div className="form-group">

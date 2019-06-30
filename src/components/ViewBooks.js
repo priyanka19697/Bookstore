@@ -37,6 +37,7 @@ class ViewBook extends Component {
 		let books = this.state.books ? this.state.books : [];
 		console.log(this.props);
 		// Entire book list, only render when filter is empty
+		// Edit/Update book when title is clicked
 		const bookList = books.map(book => {
 			console.log(book.id);
 			return (
@@ -53,6 +54,7 @@ class ViewBook extends Component {
 					<td>{book.format}</td>
 					<td>
 						<button
+							className="btn btn-primary"
 							onClick={e => {
 								this.onDeleteClick(book.id);
 							}}
@@ -82,7 +84,7 @@ class ViewBook extends Component {
 					<td>{book.publisher}</td>
 					<td>{book.genre}</td>
 					<td>{book.format}</td>
-					<td>
+					<td className="btn btn-primary">
 						<button>Delete</button>
 					</td>
 				</tr>

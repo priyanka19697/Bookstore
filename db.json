@@ -1,21 +1,10 @@
 {
   "books": [
     {
-      "title": "Web Component Fundamentals",
-      "author": "RK Rowling",
-      "isbn": "1234",
-      "publicationDate": "2-09-2000",
-      "publisher": "M&M",
-      "price": "1250",
-      "genre": "Studies",
-      "format": "PaperBack",
-      "id": 1
-    },
-    {
       "title": " React: The Big Picture",
       "author": " UI Master",
       "isbn": " 2346",
-      "publicationDate": "12-09-2000",
+      "publicationDate": "12-09-2016",
       "publisher": " UI Team",
       "price": "500",
       "genre": "Design",
@@ -43,6 +32,17 @@
       "genre": " Fantasy",
       "format": "PaperBack",
       "id": 4
+    },
+    {
+      "title": "Advanced JavaScript ",
+      "author": " FB Developer",
+      "isbn": " 7658",
+      "publicationDate": "01-07-2018",
+      "publisher": " Facebook",
+      "price": "1500",
+      "genre": " Technology",
+      "format": "docs",
+      "id": 5
     }
   ]
 }
