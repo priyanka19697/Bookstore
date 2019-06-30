@@ -7,9 +7,11 @@ const Navbar = props => {
 	// 	props.history.push('/about');
 	// }, 2000);
 	return (
-		<nav className="nav wrapper red darken-3">
+		<nav className="nav red">
 			<div className="container">
-				<a href="/" className="brand-logo">Bookstore</a>
+				<a href="/">
+					<h3>Bookstore</h3>
+				</a>
 				<ul className="right">
 					<li>
 						<Link to="/">Home</Link>

@@ -12,16 +12,6 @@ class App extends Component {
 			books: [],
 		};
 	}
-	
-
-	addBook = book => {
-		book.id = Math.random();
-		let books = [...this.state.books, book];
-		this.setState({
-			books: books,
-		});
-	};
-
 
 	render() {
 		return (
