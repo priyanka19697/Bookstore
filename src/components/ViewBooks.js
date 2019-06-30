@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BookApi from '../data/BookApi';
 import { deleteBook } from '../data/BookApi';
+import {Link } from 'react-router-dom'
 
 class ViewBook extends Component {
 	state = {
@@ -30,7 +31,7 @@ class ViewBook extends Component {
 			console.log(book.id)
 			return (
 				<div>
-					<li>{book.title}</li>
+					<Link to={"/edit/"+ book.id}><li>{book.title}</li></Link>
 					<button onClick={(e) => {deleteBook(book.id)}}>Delete</button>
 				</div>
 			);
@@ -45,7 +46,7 @@ class ViewBook extends Component {
 			return (
 				<li>
 					<span>
-						{book.title} <button>Delete</button>
+						<Link>{book.title}</Link> <button>Delete</button>
 					</span>
 				</li>
 			);

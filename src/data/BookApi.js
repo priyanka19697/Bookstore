@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 import { handleResponse, handleError } from './apiUtils';
+import { log } from 'util';
 const baseUrl = 'http://localhost:3000/books';
 
 export default class BookApi {
@@ -15,7 +16,7 @@ export default class BookApi {
 }
 
 export function saveBook(book) {
-	return fetch(baseUrl + (book.id || ''), {
+	return fetch(baseUrl +'/' +(book.id || ''), {
 		method: book.id ? 'PUT' : 'POST', // POST for create, PUT to update when id already exists.
 		headers: { 'content-type': 'application/json' },
 		body: JSON.stringify(book),
@@ -29,4 +30,10 @@ export function deleteBook(bookId) {
 	return fetch(baseUrl + '/' + bookId, { method: 'DELETE' })
 		.then(handleResponse)
 		.catch(handleError);
+}
+
+export function getBook(bookId) {
+	return fetch(baseUrl + '/' + bookId, {method: 'GET'} )
+	.then(handleResponse)
+	.catch(handleError);
 }

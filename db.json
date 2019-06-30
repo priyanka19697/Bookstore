@@ -1,8 +1,8 @@
 {
   "books": [
     {
-      "title": "asdasd",
-      "author": "123",
+      "title": "weeee",
+      "author": "123 dogi",
       "isbn": "123",
       "publicationDate": "123",
       "publisher": "123`",
@@ -43,6 +43,28 @@
       "genre": "sexy",
       "format": "wooo",
       "id": 9
+    },
+    {
+      "title": "Architecting Applications for the Real World edit",
+      "author": "buny",
+      "isbn": "123",
+      "publicationDate": "ads",
+      "publisher": "asd",
+      "price": "asdas",
+      "genre": "asdas",
+      "format": "asd",
+      "id": 10
+    },
+    {
+      "title": "Architecting Applications for the Real World edit",
+      "author": "buny and dogi",
+      "isbn": "123",
+      "publicationDate": "ads",
+      "publisher": "asd",
+      "price": "asdas",
+      "genre": "asdas",
+      "format": "asd",
+      "id": 11
     }
   ]
 }

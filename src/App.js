@@ -22,6 +22,7 @@ class App extends Component {
 					<Switch>
 						<Route exact path="/" component={ViewBooks} />
 						<Route exact path="/addbook" component={AddBook} />
+						<Route exact path="/edit/:bookId" component={AddBook}></Route>
 						{/* <Route path="/:post_id" component={AddBook} /> */}
 					</Switch>
 				</div>
