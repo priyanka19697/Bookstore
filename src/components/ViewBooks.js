@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
-import BookApi from '../data/BookApi';
 
-class ViewBooks extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			books: [],
-		};
-	}
-
-	componentDidMount() {
-		BookApi.getAllBooks(data => this.setState({ books: data }));
-	}
+class ViewBook extends Component {
+	state = {
+		books: [],
+	};
 
 	onFilterChange = e => {
 		e.preventDefault();
@@ -47,4 +39,4 @@ class ViewBooks extends Component {
 	}
 }
 
-export default ViewBooks;
+export default ViewBook;
