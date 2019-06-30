@@ -3,14 +3,14 @@ import { saveBook, getBook } from '../data/BookApi';
 
 class AddBook extends Component {
 	state = {
-		title: null,
-		author: null,
-		isbn: null,
-		publicationDate: null,
-		publisher: null,
-		price: null,
-		genre: null,
-		format: null,
+		title: ' ',
+		author: ' ',
+		isbn: ' ',
+		publicationDate: ' ',
+		publisher: ' ',
+		price: ' ',
+		genre: ' ',
+		format: ' ',
 	};
 
 	checkExistence = () => {
@@ -50,6 +50,7 @@ class AddBook extends Component {
 		e.preventDefault();
 		saveBook(this.state); //adding to state
 		this.props.history.push('/');
+		window.location.reload(true);
 	};
 
 	render() {

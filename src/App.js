@@ -18,12 +18,10 @@ class App extends Component {
 			<BrowserRouter>
 				<div className="App">
 					<Navbar />
-					{/* <ViewBooks books={this.state.books} /> */}
 					<Switch>
 						<Route exact path="/" component={ViewBooks} />
 						<Route exact path="/addbook" component={AddBook} />
-						<Route exact path="/edit/:bookId" component={AddBook}></Route>
-						{/* <Route path="/:post_id" component={AddBook} /> */}
+						<Route exact path="/edit/:bookId" component={AddBook} />
 					</Switch>
 				</div>
 			</BrowserRouter>

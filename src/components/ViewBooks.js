@@ -40,18 +40,27 @@ class ViewBook extends Component {
 		const bookList = books.map(book => {
 			console.log(book.id);
 			return (
-				<div>
-					<Link to={'/edit/' + book.id}>
-						<li>{book.title}</li>
-					</Link>
-					<button
-						onClick={e => {
-							this.onDeleteClick(book.id);
-						}}
-					>
-						Delete
-					</button>
-				</div>
+				<tr>
+					<td>{book.id}</td>
+					<td>
+						<Link to={'/edit/' + book.id}>{book.title}</Link>
+					</td>
+					<td>{book.author}</td>
+					<td>{book.isbn}</td>
+					<td>{book.publicationDate}</td>
+					<td>{book.publisher}</td>
+					<td>{book.genre}</td>
+					<td>{book.format}</td>
+					<td>
+						<button
+							onClick={e => {
+								this.onDeleteClick(book.id);
+							}}
+						>
+							Delete
+						</button>
+					</td>
+				</tr>
 			);
 		});
 
@@ -62,11 +71,21 @@ class ViewBook extends Component {
 
 		const filteredBookList = filteredBooks.map(book => {
 			return (
-				<li>
-					<span>
-						<Link>{book.title}</Link> <button>Delete</button>
-					</span>
-				</li>
+				<tr>
+					<td>{book.id}</td>
+					<td>
+						<Link>{book.title}</Link>
+					</td>
+					<td>{book.author}</td>
+					<td>{book.isbn}</td>
+					<td>{book.publicationDate}</td>
+					<td>{book.publisher}</td>
+					<td>{book.genre}</td>
+					<td>{book.format}</td>
+					<td>
+						<button>Delete</button>
+					</td>
+				</tr>
 			);
 		});
 
@@ -85,8 +104,24 @@ class ViewBook extends Component {
 					/>
 				</form>
 
+				<table className="table">
+					<thead>
+						<tr>
+							<th scope="col">Id</th>
+							<th scope="col">Title</th>
+							<th scope="col">Author</th>
+							<th scope="col">ISBN</th>
+							<th scope="col">PublishedDate</th>
+							<th scope="col">Publisher</th>
+							<th scope="col">Price</th>
+							<th scope="col">Genre</th>
+							<th scope="col">format</th>
+						</tr>
+					</thead>
+					{this.state.filter === '' ? <tbody>{bookList}</tbody> : <tbody>{filteredBookList}</tbody>}
+				</table>
+
 				{/* Render everything if filter is empty or render only filter items */}
-				{this.state.filter === '' ? <ul>{bookList}</ul> : <ul>{filteredBookList}</ul>}
 			</div>
 		);
 	}

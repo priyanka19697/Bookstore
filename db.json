@@ -1,48 +1,48 @@
 {
   "books": [
     {
-      "title": "Architecting Applications for the Real World edit",
-      "author": "bunny",
-      "isbn": "123",
-      "publicationDate": "ads",
-      "publisher": "asd",
-      "price": "asdas",
-      "genre": "asdas",
-      "format": "asd",
-      "id": 10
+      "title": "Web Component Fundamentals",
+      "author": "RK Rowling",
+      "isbn": "1234",
+      "publicationDate": "2-09-2000",
+      "publisher": "M&M",
+      "price": "1250",
+      "genre": "Studies",
+      "format": "PaperBack",
+      "id": 1
     },
     {
-      "title": "Architecting Applications for the Real World  twice",
-      "author": "buny and dogi",
-      "isbn": "123",
-      "publicationDate": "ads",
-      "publisher": "asd",
-      "price": "asdas",
-      "genre": "asdas",
-      "format": "asd",
-      "id": 11
+      "title": " React: The Big Picture",
+      "author": " UI Master",
+      "isbn": " 2346",
+      "publicationDate": "12-09-2000",
+      "publisher": " UI Team",
+      "price": "500",
+      "genre": "Design",
+      "format": "Pdf",
+      "id": 2
     },
     {
-      "title": "123",
-      "author": "1233",
-      "isbn": "789",
-      "publicationDate": "897",
-      "publisher": "123",
-      "price": "123",
-      "genre": "123",
-      "format": "123",
-      "id": 12
+      "title": "JavaScript Fundamentals",
+      "author": " FB Developer",
+      "isbn": " 2347",
+      "publicationDate": " 19-06-2005",
+      "publisher": " Facebok",
+      "price": "700",
+      "genre": "Studies",
+      "format": "Pdf",
+      "id": 3
     },
     {
-      "title": "123",
-      "author": "123",
-      "isbn": "123",
-      "publicationDate": "123",
-      "publisher": null,
-      "price": null,
-      "genre": null,
-      "format": null,
-      "id": 13
+      "title": " How to train your dragon",
+      "author": "Animator",
+      "isbn": "9876",
+      "publicationDate": " 21-06-2017",
+      "publisher": " DreamWorks",
+      "price": " 500",
+      "genre": " Fantasy",
+      "format": "PaperBack",
+      "id": 4
     }
   ]
 }
