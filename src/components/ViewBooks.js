@@ -21,19 +21,17 @@ class ViewBook extends Component {
 		console.log(this.props);
 	};
 
-	deleteBook = id => {
-		deleteBook(id);
-	};
 
 	render() {
 		let books = this.state.books ? this.state.books : [];
 		console.log(this.props);
 		// Entire book list, only render when filter is empty
 		const bookList = books.map(book => {
+			console.log(book.id)
 			return (
 				<div>
 					<li>{book.title}</li>
-					<button onclick={this.deleteBook(book.id)}>Delete</button>
+					<button onClick={(e) => {deleteBook(book.id)}}>Delete</button>
 				</div>
 			);
 		});

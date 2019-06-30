@@ -25,7 +25,8 @@ export function saveBook(book) {
 }
 
 export function deleteBook(bookId) {
-	return fetch(baseUrl + bookId, { method: 'DELETE' })
+	console.log("calling ", baseUrl + '/' + bookId)
+	return fetch(baseUrl + '/' + bookId, { method: 'DELETE' })
 		.then(handleResponse)
 		.catch(handleError);
 }
