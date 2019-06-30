@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BookApi from '../data/BookApi';
 import { deleteBook } from '../data/BookApi';
-import {Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 class ViewBook extends Component {
 	state = {
@@ -22,17 +22,35 @@ class ViewBook extends Component {
 		console.log(this.props);
 	};
 
+	onDeleteClick = id => {
+		deleteBook(id);
+		let books = this.state.books.filter(book => {
+			return book.id !== id;
+		});
+
+		this.setState({
+			books: books,
+		});
+	};
 
 	render() {
 		let books = this.state.books ? this.state.books : [];
 		console.log(this.props);
 		// Entire book list, only render when filter is empty
 		const bookList = books.map(book => {
-			console.log(book.id)
+			console.log(book.id);
 			return (
 				<div>
-					<Link to={"/edit/"+ book.id}><li>{book.title}</li></Link>
-					<button onClick={(e) => {deleteBook(book.id)}}>Delete</button>
+					<Link to={'/edit/' + book.id}>
+						<li>{book.title}</li>
+					</Link>
+					<button
+						onClick={e => {
+							this.onDeleteClick(book.id);
+						}}
+					>
+						Delete
+					</button>
 				</div>
 			);
 		});

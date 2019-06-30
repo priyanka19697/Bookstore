@@ -1,52 +1,8 @@
 {
   "books": [
     {
-      "title": "weeee",
-      "author": "123 dogi",
-      "isbn": "123",
-      "publicationDate": "123",
-      "publisher": "123`",
-      "price": "123",
-      "genre": "123",
-      "format": "123",
-      "id": 6
-    },
-    {
-      "title": "asdasd",
-      "author": "123",
-      "isbn": "123",
-      "publicationDate": "123",
-      "publisher": "123`",
-      "price": "123",
-      "genre": "123",
-      "format": "123",
-      "id": 7
-    },
-    {
-      "title": "asdasd",
-      "author": "123",
-      "isbn": "123",
-      "publicationDate": "123",
-      "publisher": "123`",
-      "price": "123",
-      "genre": "123",
-      "format": "123",
-      "id": 8
-    },
-    {
-      "title": "Web Component Fundamentalsss",
-      "author": "buny",
-      "isbn": "123",
-      "publicationDate": "123",
-      "publisher": "vinit",
-      "price": "hot",
-      "genre": "sexy",
-      "format": "wooo",
-      "id": 9
-    },
-    {
       "title": "Architecting Applications for the Real World edit",
-      "author": "buny",
+      "author": "bunny",
       "isbn": "123",
       "publicationDate": "ads",
       "publisher": "asd",
@@ -56,7 +12,7 @@
       "id": 10
     },
     {
-      "title": "Architecting Applications for the Real World edit",
+      "title": "Architecting Applications for the Real World  twice",
       "author": "buny and dogi",
       "isbn": "123",
       "publicationDate": "ads",
@@ -65,6 +21,28 @@
       "genre": "asdas",
       "format": "asd",
       "id": 11
+    },
+    {
+      "title": "123",
+      "author": "1233",
+      "isbn": "789",
+      "publicationDate": "897",
+      "publisher": "123",
+      "price": "123",
+      "genre": "123",
+      "format": "123",
+      "id": 12
+    },
+    {
+      "title": "123",
+      "author": "123",
+      "isbn": "123",
+      "publicationDate": "123",
+      "publisher": null,
+      "price": null,
+      "genre": null,
+      "format": null,
+      "id": 13
     }
   ]
 }
