@@ -29,8 +29,8 @@ class ViewBook extends Component {
 	// };
 
 	render() {
-		let books = this.state.books ? this.state.books : [];
-
+		let books = this.state.books ? this.state.books : ([]);
+		console.log(this.props);
 		// Entire book list, only render when filter is empty
 		const bookList = books.map(book => {
 			return (
