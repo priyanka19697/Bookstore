@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BookApi from '../data/BookApi';
-import AddBook from "./AddBook";
+import { deleteBook } from '../data/BookApi';
+
 class ViewBook extends Component {
 	state = {
 		books: [],
@@ -20,23 +21,19 @@ class ViewBook extends Component {
 		console.log(this.props);
 	};
 
-	// addBook = book => {
-	// 	book.id = Math.random();
-	// 	let books = [...this.state.books, book];
-	// 	this.setState({
-	// 		books: books,
-	// 	});
-	// };
+	deleteBook = id => {
+		deleteBook(id);
+	};
 
 	render() {
-		let books = this.state.books ? this.state.books : ([]);
+		let books = this.state.books ? this.state.books : [];
 		console.log(this.props);
 		// Entire book list, only render when filter is empty
 		const bookList = books.map(book => {
 			return (
 				<div>
 					<li>{book.title}</li>
-					<button>Delete</button>
+					<button onclick={this.deleteBook(book.id)}>Delete</button>
 				</div>
 			);
 		});
@@ -48,8 +45,11 @@ class ViewBook extends Component {
 
 		const filteredBookList = filteredBooks.map(book => {
 			return (
-
-					<li><span>{book.title} <button>Delete</button></span></li>
+				<li>
+					<span>
+						{book.title} <button>Delete</button>
+					</span>
+				</li>
 			);
 		});
 
@@ -70,7 +70,6 @@ class ViewBook extends Component {
 
 				{/* Render everything if filter is empty or render only filter items */}
 				{this.state.filter === '' ? <ul>{bookList}</ul> : <ul>{filteredBookList}</ul>}
-				<AddBook></AddBook>
 			</div>
 		);
 	}

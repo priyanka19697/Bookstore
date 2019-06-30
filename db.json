@@ -85,15 +85,26 @@
       "id": 8
     },
     {
-      "title": "asdasd",
-      "author": "123",
+      "title": "Web Component Fundamentalsss",
+      "author": "buny",
       "isbn": "123",
       "publicationDate": "123",
-      "publisher": "123`",
-      "price": "123",
-      "genre": "123",
-      "format": "123",
+      "publisher": "vinit",
+      "price": "hot",
+      "genre": "sexy",
+      "format": "wooo",
       "id": 9
+    },
+    {
+      "title": "Web Component Fundamentalsss",
+      "author": "buny",
+      "isbn": "123",
+      "publicationDate": "123",
+      "publisher": "vinit",
+      "price": "hot",
+      "genre": "sexy",
+      "format": "wooo",
+      "id": 10
     }
   ]
 }

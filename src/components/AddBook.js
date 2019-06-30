@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { saveBook } from '../data/BookApi'
+import { saveBook } from '../data/BookApi';
 
 class AddBook extends Component {
 	state = {
@@ -21,9 +21,6 @@ class AddBook extends Component {
 
 	handleSubmit = e => {
 		e.preventDefault();
-		// this.props.addBook(this.state);
-
-		console.log("SAVING TO SERVER CUTE THINGGG")
 		saveBook(this.state); //adding to state
 	};
 

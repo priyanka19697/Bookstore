@@ -21,7 +21,7 @@ class App extends Component {
 					{/* <ViewBooks books={this.state.books} /> */}
 					<Switch>
 						<Route exact path="/" component={ViewBooks} />
-						<Route exact path="/addbook" component={ViewBooks} />
+						<Route exact path="/addbook" component={AddBook} />
 						{/* <Route path="/:post_id" component={AddBook} /> */}
 					</Switch>
 				</div>
