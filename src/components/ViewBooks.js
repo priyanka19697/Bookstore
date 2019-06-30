@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import BookApi from '../data/BookApi';
-
+import AddBook from "./AddBook";
 class ViewBook extends Component {
 	state = {
 		books: [],
@@ -48,10 +48,8 @@ class ViewBook extends Component {
 
 		const filteredBookList = filteredBooks.map(book => {
 			return (
-				<div>
-					<li>{book.title}</li>
-					<button>Delete</button>
-				</div>
+
+					<li><span>{book.title} <button>Delete</button></span></li>
 			);
 		});
 
@@ -69,8 +67,10 @@ class ViewBook extends Component {
 						onChange={this.onFilterChange}
 					/>
 				</form>
+
 				{/* Render everything if filter is empty or render only filter items */}
 				{this.state.filter === '' ? <ul>{bookList}</ul> : <ul>{filteredBookList}</ul>}
+				<AddBook></AddBook>
 			</div>
 		);
 	}

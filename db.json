@@ -50,6 +50,50 @@
       "price": "250",
       "genre": "fantasy",
       "format": "pdf"
+    },
+    {
+      "title": "asdasd",
+      "author": "123",
+      "isbn": "123",
+      "publicationDate": "123",
+      "publisher": "123`",
+      "price": "123",
+      "genre": "123",
+      "format": "123",
+      "id": 6
+    },
+    {
+      "title": "asdasd",
+      "author": "123",
+      "isbn": "123",
+      "publicationDate": "123",
+      "publisher": "123`",
+      "price": "123",
+      "genre": "123",
+      "format": "123",
+      "id": 7
+    },
+    {
+      "title": "asdasd",
+      "author": "123",
+      "isbn": "123",
+      "publicationDate": "123",
+      "publisher": "123`",
+      "price": "123",
+      "genre": "123",
+      "format": "123",
+      "id": 8
+    },
+    {
+      "title": "asdasd",
+      "author": "123",
+      "isbn": "123",
+      "publicationDate": "123",
+      "publisher": "123`",
+      "price": "123",
+      "genre": "123",
+      "format": "123",
+      "id": 9
     }
   ]
 }

@@ -17,7 +17,7 @@ const Navbar = props => {
 						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<Link to="/AddBook">AddBook</Link>
+						<Link to="/addBook">AddBook</Link>
 					</li>
 				</ul>
 			</div>
